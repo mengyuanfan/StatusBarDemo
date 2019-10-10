@@ -1,20 +1,20 @@
 # StatusBarDemo
 白色状态栏-沉淀式状态栏
 
-build.gradle 文件 加入
- compile 'com.readystatesoftware.systembartint:systembartint:1.0.3'
+     build.gradle 文件 加入
+      compile 'com.readystatesoftware.systembartint:systembartint:1.0.3'
 
         //设置状态栏透明
         StatusBarUtil.setTranslucentStatus(this);
         //所以如果你是这种情况,请使用以下代码, 设置状态使用深色文字图标风格, 否则你可以选择性注释掉这个if内容
         if (!StatusBarUtil.setStatusBarDarkTheme(this, true)) {
-//            //如果不支持设置深色风格 为了兼容总不能让状态栏白白的看不清, 于是设置一个状态栏颜色为半透明,
-//            //这样半透明+白=灰, 状态栏的文字能看得清
-            StatusBarUtil.setStatusBarColor(this, 0x55000000);
-        }
+                //如果不支持设置深色风格 为了兼容总不能让状态栏白白的看不清, 于是设置一个状态栏颜色为半透明,
+               //这样半透明+白=灰, 状态栏的文字能看得清
+              StatusBarUtil.setStatusBarColor(this, 0x55000000);
+         }
 
 
-public class StatusBarUtil {
+    public class StatusBarUtil {
 
     public final static int TYPE_MIUI = 0;
     public final static int TYPE_FLYME = 1;
@@ -198,10 +198,10 @@ public class StatusBarUtil {
         }
         return result;
     }
-}
+    }
 
 
-public class AndroidOSUtils {
+    public class AndroidOSUtils {
 
     public static final String ROM_MIUI = "MIUI";
     public static final String ROM_EMUI = "EMUI";
@@ -307,7 +307,7 @@ public class AndroidOSUtils {
         }
         return line;
     }
-}
+    }
 
 
 
