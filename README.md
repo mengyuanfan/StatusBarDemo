@@ -1,5 +1,5 @@
 # StatusBarDemo
-白色状态栏-沉淀式状态栏
+白色状态栏-沉淀式状态栏（状态栏白底黑字）
 
      build.gradle 文件 加入
       compile 'com.readystatesoftware.systembartint:systembartint:1.0.3'
